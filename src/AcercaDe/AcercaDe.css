@@ -1,0 +1,284 @@
+/* AboutPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.body{
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleteam{
+  margin-top: 50px;
+  text-align: center;
+  color: #28CEE5;
+  display: flex;
+  align-items: center; /* Añade esto para centrar verticalmente */
+  justify-content: center; 
+  width: 100%;
+  font-size: 75px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.contenedoor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.our-team{
+  background: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin: 0px 20px;
+  padding: 30px 0 40px;
+  width: 30%;
+}
+
+.our-team .pic{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 0px;
+  z-index: 1;
+  position: relative;
+}
+
+.post{}
+
+.our-team .pic::before{
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background: #28CEE5;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.2;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team .pic::before{
+  height: 100%;
+}
+
+.our-team .pic:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #28CEE5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .pic img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .pic img{
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .team-content{
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.our-team .tittle{
+  font-size: 22px;
+  font-weight: 700;
+  color: #4e5052;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.our-team .post{
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+}
+
+.our-team .social{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #28CEE5;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social{
+  bottom: 0;
+}
+
+.our-team .social li{
+  display: inline-block;
+}
+
+.our-team .social li a{
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.our-team .social li a:hover{
+  color: #28CEE5;
+  background: #f7f5ec;
+}
+.aboutPage {
+    font-family: 'Open Sans', sans-serif; /* Basado en la apariencia del sitio */
+  }
+  
+  .aboutHeader {
+    background-image: url('../../src/images/home.png');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px; /* Ajustar según la imagen proporcionada */
+  }
+  
+  .aboutHeader h1 {
+    font-size: 75px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+  }
+  
+  
+  .aboutFooter {
+    background-color: #333; /* O el color que corresponda al footer del tema */
+    color: white;
+    text-align: center;
+}
+
+.about{
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.about-img{
+  height: auto;
+  width: 100%;
+}
+
+.aboutimg{
+  margin-top: 15px;
+  height: auto;
+  width: 100%;
+}
+
+.about-text{
+  width: 550px;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h1{
+  color: black;
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-text h5{
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.spaan{
+  color: #28CEE5;
+}
+
+.about-text p{
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.about-button{
+  background: #28CEE5;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+}
+
+.about-button:hover{
+  color: black;
+  background: transparent;
+  border: 2px solid #28CEE5;
+  cursor: pointer;
+}
+
+.icono{
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+@media(max-width: 720px){
+  .contenedoor{
+    flex-direction: column;
+  }
+  .our-team{
+    width: 80%;
+    margin-top: 30px;
+  }
+}

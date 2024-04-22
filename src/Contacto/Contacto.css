@@ -1,0 +1,113 @@
+/* Estilo General de la Sección de Contacto */
+#contact-section {
+    background-color: #f9f9f9; /* Color de fondo de la sección */
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif; /* Ejemplo de tipografía */
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Título de la Sección */
+  .contact-title {
+    color: #333; /* Color del título */
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 1rem;
+  }
+  
+  /* Subtítulo */
+  .contact-subtitle {
+    color: #555; /* Color del subtítulo */
+    margin-bottom: 2rem;
+  }
+  
+  /* Formulario de Contacto */
+  .contact-form {
+    background-color: #ffffff; /* Fondo del formulario */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para el formulario */
+  }
+  
+  .contact-form-group {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .contact-input,
+  .contact-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd; /* Borde de los campos de texto */
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: all 0.3s ease;
+    background-color: #ffffff; /* Fondo para la etiqueta */
+    padding: 0 5px;
+  }
+  
+  .contact-input:focus,
+  .contact-textarea:focus {
+    outline: none;
+    border-color: #333; /* Borde cuando el campo está enfocado */
+  }
+  
+  .contact-input:focus + .contact-label,
+  .contact-textarea:focus + .contact-label {
+    top: -20px;
+    left: 10px;
+    font-size: 0.75rem;
+    color: #333; /* Color de la etiqueta cuando el campo está enfocado */
+  }
+  
+  /* Botón de Envío */
+  .contact-submit-button {
+    background-color: #0056b3; /* Color de fondo del botón */
+    color: #ffffff; /* Color de texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-submit-button:hover {
+    background-color: #003d82; /* Color del botón al pasar el cursor */
+  }
+  
+  /* Información de Contacto */
+  .contact-info-detail {
+    color: #666; /* Color del texto de la información de contacto */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Enlace de WhatsApp */
+  .contact-whatsapp-link {
+    margin-top: 2rem;
+  }
+  
+  .contact-whatsapp-link a {
+    display: inline-block;
+  }
+  
+  .contact-whatsapp-link img {
+    width: 50px; /* Tamaño del ícono de WhatsApp */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-whatsapp-link img:hover {
+    transform: scale(1.1); /* Efecto al pasar el cursor sobre el ícono de WhatsApp */
+  }
+  
+  /* Agrega aquí los estilos para los íconos de redes sociales si los necesitas */
+  

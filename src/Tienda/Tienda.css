@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.contenedorTienda{
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.tituloTienda{
+  font-size: 2rem;
+  padding: 1rem 0 0 0;
+  color: #08a05c;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.productos{
+  padding: 5rem 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+.producto{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, .2);
+  border: 6px solid transparent;
+  border-radius: 5px;
+}
+
+.producto:hover{
+  border: 6px solid #08a95c55;
+}
+
+.producto_img img{
+  width: 250px;
+  height: 150px;
+}
+
+.producto_footer{
+  padding: 1rem;
+}
+
+.producto_footer h1{
+  text-align: center;
+  font-size: 42px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.producto_footer p{
+  font-size: 20px;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(0, 0, 0, .555);
+  text-transform: uppercase;
+}
+
+.producto_footer .price{
+  font-size: 2rem;
+  color: #1a202c;
+}
+
+.producto .buttom{
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 3rem;
+  padding: 0 1rem;
+  margin: 1rem;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+}
+
+.buttom .btn{
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+.buttom button{
+  background: #3033d3;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #3033d3;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 15px;
+  transition: .4s;
+}
+
+.buttom button:hover{
+  color: black;
+  background: white;
+  border: 2px solid #3033d3;
+}
+
+.buttom div{
+  background-color: #08a05c;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  margin-left: -2rem;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #08a05c;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: .4s;
+}
+
+.buttom div:hover{
+  color: black;
+  background: white;
+  border: 2px solid #08a05c;
+}
+
+.buttom div a{
+  color: white;
+  font-weight: 700;
+}
+
+.container-all{
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.main-title{
+  text-align: center;
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.container-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-box a{
+  text-decoration: none;
+  color: black;
+}
+
+.box{
+  width: 250px;
+  height: 180px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.box:hover{
+  transform: translate(5px, -5px);
+  box-shadow: -10px 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.box .icon,
+.box h4,
+.box p{
+  position: relative;
+  z-index: 1;
+  transition: all 400ms;
+}
+
+.box-icon{
+  font-size: 40px;
+  transform: translateY(30px);
+}
+
+.box:hover .icon{
+  color: white;
+  font-size: 30px;
+  transform: translateY(0);
+}
+
+.box h4,
+.box p{
+  margin-top: 10px;
+}
+
+.box h4{
+  font-size: 30px;
+  transform: translateY(30px);
+}
+
+.box:hover h4{
+  transform: translateY(0);
+  color: white;
+}
+
+.box p{
+  font-size: 14px;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.box:hover p{
+  transform: translateY(0);
+  opacity: 1;
+  color: white;
+}
+
+.box .background-hover{
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  top: 250px;
+  left: -170px;
+  border-radius: 100%;
+  transition: all 300ms;
+  background: linear-gradient(to bottom, rgb(100, 98, 98), rgb(151, 145, 145));
+}
+
+.box:hover .background-hover{
+  width: 400px;
+  height: 400px;
+  top: -70px;
+  left: -70px;
+}
+
+/* Cambiar color de las cajas */
+
+/* Box1 */
+.box1 .icon{
+  color: #3dc315;
+  font-size: 25px;
+}
+
+.box1 .background-hover{
+  background: linear-gradient(to bottom, #3dc315, #fdb42a);
+  transition: all 750ms;
+}
+
+/* Box2 */
+.box2 .icon{
+  color: #0090ea;
+  font-size: 25px;
+}
+
+.box2 .background-hover{
+  background: linear-gradient(to bottom, #00d3d3, #0090ea); 
+  top: -170px;
+  left: -250px;
+  transition: all 750ms;
+}
+
+/* Box3 */
+.box3 .icon{
+  color: #9d00f0;
+  font-size: 25px;
+}
+
+.box3 .background-hover{
+  background: linear-gradient(to bottom, #d300cb, #9d00f0); 
+  top: 170px;
+  left: 500px;
+  transition: all 750ms;
+}
+
+/* Box4 */
+.box4 .icon{
+  color: #ffa700;
+  font-size: 25px;
+}
+
+.box4 .background-hover{
+  background: linear-gradient(to bottom, #dd0f0f, #ffa700); 
+  top: -170px;
+  left: 500px;
+  transition: all 750ms;
+}
+
+/* Box5 */
+.box5 .icon{
+  color: #ea003f;
+  font-size: 25px;
+}
+
+.box5 .background-hover{
+  background: linear-gradient(to bottom, #e33a67, #ea003f); 
+  top: 170px;
+  left: 500px;
+  transition: all 750ms;
+}

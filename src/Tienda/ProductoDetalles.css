@@ -1,0 +1,91 @@
+.detalles {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 3rem 1rem 0 1rem;
+  box-sizing: border-box;
+}
+
+.detalles h2 {
+  font-size: 3rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.detalles .price {
+  font-size: 3rem;
+  width: 100%;
+  color: #08a05c;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.detalles button {
+  max-width: 300px;
+  padding: 1rem 1rem;
+  border: none;
+  outline: 0;
+  background: #3033d3;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 120px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: .4s;
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+}
+
+.detalles img {
+  height: 700px;
+  object-fit: contain;
+  margin-top: -7rem;
+  z-index: -1;
+}
+
+.detalles .description {
+  font-size: 1.1rem;
+  max-width: 1300px;
+  width: 100%;
+  letter-spacing: 1px;
+  color: #5f5d5d;
+  margin: 0 auto;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+}
+
+.detalles .description b {
+  font-size: 1.3rem;
+  color: #30333a;
+}
+
+.relacionados {
+  text-align: center;
+  background: #2e2e2e;
+  color: white;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}

@@ -1,0 +1,62 @@
+/* Gallery.css */
+
+.gallery {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Color de fondo claro para la sección */
+}
+
+.gallery h2 {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.gallery p {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  max-width: 1000px; /* Establece el ancho máximo para las imágenes */
+  max-height: 600px; /* Establece la altura máxima para las imágenes */
+  margin: auto; /* Centra la imagen horizontalmente */
+}

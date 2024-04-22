@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+.banner1 {
+  background-image: url("../../src/images/banner1.jpg");
+  background-position: top center;
+  background-size: cover;
+  padding: 15%;
+  background-attachment: fixed;
+}
+
+.vermas {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; /* Agrega un indicador de cursor al pasar el mouse */
+  background: black;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.vermas:hover{
+  color: black;
+  background: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.imgBox img:nth-child(2) {
+  transform: rotateY(-180deg);
+}
+
+.details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.articulo {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.articulo img:first-child {
+  box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+  border-radius: 4px;
+  object-fit: cover;
+  width: 85%;
+}
+
+.articulo img:last-child {
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(25%);
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+.articulo .imgcolum:last-child{
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+  transform: translateY(15%);
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+.articulo:hover {
+  transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+.articulo::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 10%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0) 95%
+  );
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.imgcolum{
+  width: 100%;
+  height: auto;
+}
+.articulo:hover::before {
+  opacity: 1;
+}
+
+.articulo:hover img:last-child {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+.articuloprod {
+  margin-left: 10%;
+}
+
+.columimg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+}
+
+.txt {
+  margin-bottom: 5%;
+}
+
+.txt h1 {
+  font-size: 70px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-align: center;
+}
+
+.txt p {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lh {
+  border: 2px solid;
+}
+
+.pf h1 {
+  font-size: 55px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-align: center;
+}
+
+.pf p{
+  font-size: 16px;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@media (max-width: 991.98px) {
+  /* Media query para dispositivos medianos */
+  .col-lg-8,
+  .col-lg-4 {
+    flex: 0 0 100%; /* Cambia el ancho de las columnas a 100% en dispositivos medianos */
+  }
+  .articulo {
+    width: 100%; /* Ajusta el ancho del artículo al 100% en dispositivos medianos */
+    margin-bottom: 20px; /* Agrega un margen inferior a los artículos */
+  }
+  .imagens {
+    width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% */
+    height: auto; /* Permite que las imágenes mantengan su aspecto */
+    display: block; /* Asegura que las imágenes se muestren como bloques */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+  }
+  .articuloprod {
+    margin-left: 0%;
+  }
+  .columimg{
+    width: 100%;
+  }
+}
+
+/* Estilos responsivos para dispositivos pequeños */
+@media (max-width: 767.98px) {
+  .vermas {
+    padding: 15px 25px; /* Ajusta el padding para dispositivos más pequeños */
+    font-size: 14px; /* Ajusta el tamaño del texto para dispositivos más pequeños */
+  }
+  .col-md-6 {
+    width: 100% !important; /* Hacer que las columnas ocupen el 100% del ancho en dispositivos móviles */
+    margin-bottom: 20px; /* Añadir espacio entre las columnas en dispositivos móviles */
+  }
+
+  .row{
+    flex-direction: column;
+  }
+  .columimg{
+    width: 100%;
+  }
+}

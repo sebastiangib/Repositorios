@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.banner{
+  background-image: url("../../src/images/banner.jpg");
+  background-position: top center;
+  background-size: cover;
+  padding: 25% 10% 30% 5%;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.banner::after{
+  content:'';
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+
+.hero-content {
+  color: white;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 100%; /* Limita el ancho del contenido para una mejor legibilidad */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.hero-content h1{
+  font-size: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.hero-content p{
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.hero-ctas {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  font-size: 16px;
+}
+
+.cta-primary {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; /* Agrega un indicador de cursor al pasar el mouse */
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: .4s;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.cta-primary:hover{
+  color: black;
+  background: white;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.inicio{
+  background-color: #f9f9f9;
+}
+
+.inicio h1{
+  margin-top: 60px;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.inicio p{
+  font-size: 18px;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.botones{
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.botones a{
+  text-decoration: none;
+}
+
+.boton1{
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; /* Agrega un indicador de cursor al pasar el mouse */
+  background: #28CEE5;
+  color: black;
+  text-decoration: none;
+  border: 2px solid #28CEE5;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+}
+
+.boton1:hover{
+  color: #28CEE5;
+  background: white;
+  border: 2px solid #28CEE5;
+  cursor: pointer;
+}
+
+.boton2{
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; /* Agrega un indicador de cursor al pasar el mouse */
+  background: #ffffff;
+  color: #28CEE5;
+  text-decoration: none;
+  border: 2px solid #28CEE5;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+}
+
+.boton2:hover{
+  color: black;
+  background: #28CEE5;
+  border: 2px solid #28CEE5;
+  cursor: pointer;
+}
+
+.txt h1{
+  font-size: 50px;
+}
+
+.txt p{
+  font-size: 16px;
+}
+
+.columimg{
+  width: 100%;
+  height: auto;
+}
+
+.blancoNegro{
+  transition: transform .3s;
+}
+
+.blancoNegro:hover{
+  transform: scale(1.05);
+}
+
+.txtlogos{
+  color: black;
+}
+
+.banner2{
+  background-image: url('../../src/images/banner2.jpg');
+  background-size: cover;
+  align-items: center;
+  color: white;
+  padding: 220px 200px; /* Ajustar según la imagen proporcionada */
+}
+
+.vivemas h1{
+  font-size: 65px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-align: center;
+}
+
+.vivemas p{
+  font-size: 18px;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Modificaciones para dispositivos móviles */
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 100% !important; /* Hacer que las columnas ocupen el 100% del ancho en dispositivos móviles */
+    margin-bottom: 20px; /* Añadir espacio entre las columnas en dispositivos móviles */
+  }
+
+  .row{
+    flex-direction: column;
+  }
+  .banner {
+    padding: 25% 5% 30% 5%; /* Ajusta el padding del banner para dispositivos móviles */
+  }
+  
+  .hero-content h1 {
+    font-size: 40px; /* Reducir el tamaño del texto del encabezado */
+  }
+  
+  .hero-content p {
+    font-size: 16px; /* Reducir el tamaño del texto del párrafo */
+  }
+  
+  .botones {
+    flex-direction: column; /* Cambiar la dirección del flexbox a columna para dispositivos móviles */
+    align-items: center; /* Centrar los botones verticalmente */
+  }
+  
+  .boton1, .boton2 {
+    margin-bottom: 10px; /* Añadir espacio entre los botones */
+  }
+  
+  .txt h1 {
+    font-size: 30px; /* Reducir el tamaño del texto del título */
+  }
+  
+  .txt p {
+    font-size: 14px; /* Reducir el tamaño del texto del párrafo */
+  }
+  
+  .columimg {
+    width: 100%; /* Hacer que las imágenes ocupen todo el ancho del contenedor */
+  }
+  
+  .banner2 {
+    padding: 100px 20px; /* Ajustar el padding del segundo banner para dispositivos móviles */
+  }
+  
+  .vivemas h1 {
+    font-size: 40px; /* Reducir el tamaño del texto del título */
+  }
+  
+  .vivemas p {
+    font-size: 16px; /* Reducir el tamaño del texto del párrafo */
+  }
+}

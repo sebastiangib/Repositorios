@@ -1,0 +1,91 @@
+:root {
+    --deep-blue: #181c4f;
+    --vibrant-green: #8ac124;
+    --energy-orange: #f15a22;
+    --creative-yellow: #fec700;
+    --motivative-grey: #9b9b9b;
+    --harmonious-purple: #800080;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: var(--deep-blue);
+    padding: 10px 20px;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoImg {
+    max-height: 50px;
+    width: auto;
+  }
+  
+  .logoText {
+    font-size: 1.3rem;
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .navList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .navItem {
+    padding: 10px;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+    transition: color 0.3s;
+  }
+  
+  .navLink:hover,
+  .navLink:focus {
+    color: var(--creative-yellow);
+  }
+  
+  .headerActions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .actionButton {
+    background-color: var(--vibrant-green);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .actionButton:hover {
+    background-color: var(--creative-yellow);
+  }
+  

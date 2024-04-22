@@ -1,0 +1,87 @@
+.portfolioGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .portfolioItem {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que todo el contenido esté dentro del borde redondeado */
+  }
+  
+  .portfolioItemImage {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .portfolioItemContent {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; /* O right, dependiendo de la dirección del texto que prefieras */
+    color: var(--text-color);
+  }
+  
+  /* Ítems impares: imagen a la izquierda, texto a la derecha */
+  .portfolioItem:nth-child(odd) .portfolioItemImage {
+    order: 1;
+  }
+  
+  .portfolioItem:nth-child(odd) .portfolioItemContent {
+    order: 2;
+  }
+  
+  /* Ítems pares: imagen a la derecha, texto a la izquierda */
+  .portfolioItem:nth-child(even) .portfolioItemImage {
+    order: 2;
+  }
+  
+  .portfolioItem:nth-child(even) .portfolioItemContent {
+    order: 1;
+  }
+  /* Asumiendo que estás usando la paleta de colores proporcionada anteriormente */
+  
+  /* Estilos de los botones de acción en la cabecera */
+  .smartLivingHeaderActions {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Alinea los botones de acción a la derecha */
+  }
+  
+  /* Estilos de los botones individuales */
+  .smartLivingSearchButton,
+  .smartLivingCartButton {
+    background-color: var(--harmonious-purple); /* Color de la paleta para el fondo */
+    color: white; /* Texto en blanco para contraste */
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem; /* Bordes redondeados para un look suave */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave para interacción */
+  }
+  
+  /* Cambiar el color y elevar ligeramente el botón al pasar el mouse */
+  .smartLivingSearchButton:hover,
+  .smartLivingCartButton:hover {
+    background-color: var(--vibrant-green); /* Color más claro para el hover */
+    transform: translateY(-2px); /* Elevación sutil */
+  }
+  
+  /* Si los botones tienen íconos, puedes añadir estilos adicionales para esos íconos aquí */
+  /* Por ejemplo, si estás usando FontAwesome, podrías tener algo como esto: */
+  .smartLivingSearchButton i,
+  .smartLivingCartButton i {
+    margin-right: 0.5rem; /* Añade espacio entre el ícono y el texto si lo hay */
+  }
+  

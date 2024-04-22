@@ -1,0 +1,32 @@
+/* Footer.css */
+.footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: white; /* Texto en color claro para contraste */
+    padding: 20px 0; /* Relleno superior e inferior */
+    text-align: center; /* Centrar el texto */
+}
+
+.footer a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* No subrayar los enlaces */
+    margin: 0 10px; /* Margen entre enlaces */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Subrayar en hover para indicar clic */
+}
+
+.footer p {
+    margin: 10px 0 0; /* Margen superior */
+}
+
+.banner3{
+    background-image: url("../../src/images/footer.jpg");
+    background-position: top center;
+    background-size: cover;
+    padding: 25% 10% 30% 5%;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+  }
+/* Agrega más estilos según sea necesario */

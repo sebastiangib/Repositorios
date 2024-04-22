@@ -1,0 +1,52 @@
+/* Testimonials.css */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+.testimonials {
+  background-color: #f9f9f9; /* Color de fondo claro para la sección */
+  padding: 30px 0; /* Relleno superior e inferior */
+}
+
+.testimonials h2 {
+  font-size: 45px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.testimonialsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre testimonios */
+}
+
+.testimonial {
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  max-width: 600px; /* Máximo ancho del testimonio */
+  background-color: #f0f0f0; /* Fondo ligeramente gris para distinguir */
+  margin: 0 auto; /* Centra los testimonios */
+  padding: 20px;
+  border-left: 4px solid #28CEE5; /* Barra lateral como elemento de diseño */
+}
+
+.testimonial p {
+  color: #333; /* Color de texto oscuro para contraste */
+  font-size: 15px;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.testimonial cite {
+  display: block;
+  text-align: right;
+  color: #666;
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
